@@ -2,7 +2,7 @@
   <head>
     <meta charset='UTF-8' />
     <title>{{name}}</title>
-    <link rel='stylesheet' type='text/css' href='/css/index.css' />
+    <link rel='stylesheet' type='text/css' href='/css/user.css' />
   </head>
 
   <body>
@@ -10,21 +10,21 @@
       <h1>Hello {{name}}!</h1>
 
       <h2>Identity</h2>
-      <p>Name: {{name}}</p>
-      <p>Username: {{username}}</p>
-      <p>Email: {{email}}</p>
+      <p><span>Name:</span> {{name}}</p>
+      <p><span>Username: </span>{{username}}</p>
+      <p><span>Email: </span>{{email}}</p>
+      <p><span>Phone: </span>{{phone}}</p>
+      <p><span>Website: </span>{{website}}</p>
 
       <h2>Address</h2>
-      <p>Street: {{address.street}}</p>
-      <p>Suite: {{address.suite}}</p>
-      <p>City: {{address.city}}</p>
-      <p>Zipcode: {{address.zipcode}}</p>
-      <p>Phone: {{phone}}</p>
-      <p>Website: {{website}}</p>
+      <p><span>Street: </span>{{address.street}}</p>
+      <p><span>Suite: </span>{{address.suite}}</p>
+      <p><span>City: </span>{{address.city}}</p>
+      <p><span>Zipcode: </span>{{address.zipcode}}</p>
 
       <h2>Company:</h2>
-      <p>Name: {{company.name}}</p>
-      <p>Catch phrase: {{company.catchPhrase}}</p>
+      <p><span>Name: </span>{{company.name}}</p>
+      <p><span>Catch phrase: </span>{{company.catchPhrase}}</p>
 
     </div>
   </body>
