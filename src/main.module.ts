@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
-import { UserController } from './user/user.controller';
+import { HandlebarsHelpersModule } from './handlebars-helpers/handlebars-helpers.module';
+import { PolyglotModule } from './polyglot/polyglot.module';
+import { UserModule } from './user/user.module';
 
 @Module({
-  imports: [],
-  controllers: [UserController],
+  imports: [UserModule, PolyglotModule, HandlebarsHelpersModule],
 })
 export class MainModule {}

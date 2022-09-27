@@ -1,7 +1,8 @@
-const frenchMessages = {
+import { Message } from './index';
+
+const frenchMessages: Message = {
   users: {
-    name: 'Utilisateur |||| Utilisateurs',
-    title: 'Bonjour %{name}',
+    name: 'Utilisateur ',
     fields: {
       id: 'ID',
       identity: {
@@ -14,7 +15,7 @@ const frenchMessages = {
       },
 
       address: {
-        title: 'Addresse',
+        title: 'Adresse',
         street: 'Rue',
         city: 'Ville',
         zipcode: 'Code postal',

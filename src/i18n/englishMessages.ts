@@ -1,4 +1,6 @@
-const englishMessages = {
+import { Message } from './index';
+
+const englishMessages: Message = {
   users: {
     name: 'User',
     fields: {
