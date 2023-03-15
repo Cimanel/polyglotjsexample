@@ -7,7 +7,6 @@ export interface Message {
 
 const messages: { [key: string]: Message } = {
   en: englishMessages,
-
   fr: frenchMessages,
 };
 

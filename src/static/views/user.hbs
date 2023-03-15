@@ -9,22 +9,29 @@
     <div id='page'>
       <h1>Hello {{name}}!</h1>
 
-      <h2>Identity</h2>
-      <p><span>Name:</span> {{name}}</p>
-      <p><span>Username: </span>{{username}}</p>
-      <p><span>Email: </span>{{email}}</p>
-      <p><span>Phone: </span>{{phone}}</p>
-      <p><span>Website: </span>{{website}}</p>
+      <h2>{{translate 'users.fields.identity.title'}}</h2>
+      <p><span>{{translate 'users.fields.identity.name'}}:</span> {{name}}</p>
+      <p><span>{{translate 'users.fields.identity.username'}}:
+        </span>{{username}}</p>
+      <p><span>{{translate 'users.fields.identity.email'}}: </span>{{email}}</p>
+      <p><span>{{translate 'users.fields.identity.phone'}}: </span>{{phone}}</p>
+      <p><span>{{translate 'users.fields.identity.website'}}:
+        </span>{{website}}</p>
 
-      <h2>Address</h2>
-      <p><span>Street: </span>{{address.street}}</p>
-      <p><span>Suite: </span>{{address.suite}}</p>
-      <p><span>City: </span>{{address.city}}</p>
-      <p><span>Zipcode: </span>{{address.zipcode}}</p>
+      <h2>{{translate 'users.fields.address.title'}}</h2>
+      <p><span>{{translate 'users.fields.address.street'}}:
+        </span>{{address.street}}</p>
+      <p><span>{{translate 'users.fields.address.city'}}:
+        </span>{{address.city}}</p>
+      <p><span>{{translate 'users.fields.address.zipcode'}}:
+        </span>{{address.zipcode}}</p>
 
-      <h2>Company:</h2>
-      <p><span>Name: </span>{{company.name}}</p>
-      <p><span>Catch phrase: </span>{{company.catchPhrase}}</p>
+      <h2>{{translate 'users.fields.company.title'}}:</h2>
+      <p><span>{{translate 'users.fields.company.name'}}:
+        </span>{{company.name}}</p>
+      <p><span>{{translate 'users.fields.company.catchPhrase'}}:
+        </span>{{company.catchPhrase}}</p>
+
     </div>
   </body>
 </html>
