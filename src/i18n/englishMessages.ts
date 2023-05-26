@@ -2,6 +2,7 @@ import { Message } from './index';
 
 const englishMessages: Message = {
   users: {
+    hello_name: 'Hello %{name}!',
     name: 'User',
     fields: {
       id: 'ID',
@@ -24,6 +25,9 @@ const englishMessages: Message = {
         title: 'Company',
         name: 'Name',
         catchPhrase: 'Catch phrase',
+      },
+      pets: {
+        title: 'Pet |||| Pets',
       },
     },
   },

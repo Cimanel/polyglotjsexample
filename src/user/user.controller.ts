@@ -30,7 +30,7 @@ export class UserController {
         `https://jsonplaceholder.typicode.com/users/${id}`,
       );
       const user = await response.json();
-      return user;
+      return { ...user, pets: ['Cookie'] };
     } catch (error) {
       Logger.error(error);
       throw error;

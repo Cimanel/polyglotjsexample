@@ -2,6 +2,7 @@ import { Message } from './index';
 
 const frenchMessages: Message = {
   users: {
+    hello_name: 'Bonjour %{name}!',
     name: 'Utilisateur ',
     fields: {
       id: 'ID',
@@ -24,6 +25,9 @@ const frenchMessages: Message = {
         title: 'Entreprise',
         name: 'Nom',
         catchPhrase: "Phrase d'accroche",
+      },
+      pets: {
+        title: 'Animal domestique |||| Animaux domestiques',
       },
     },
   },

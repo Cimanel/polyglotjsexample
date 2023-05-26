@@ -7,10 +7,11 @@
 
   <body>
     <div id='page'>
-      <h1>Hello {{name}}!</h1>
+      <h1>{{translate 'users.hello_name' name=name}}</h1>
 
       <h2>{{translate 'users.fields.identity.title'}}</h2>
-      <p><span>{{translate 'users.fields.identity.name'}}:</span> {{name}}</p>
+      <p><span>{{translate 'users.fields.identity.name'}}:</span>
+        {{name}}</p>
       <p><span>{{translate 'users.fields.identity.username'}}:
         </span>{{username}}</p>
       <p><span>{{translate 'users.fields.identity.email'}}: </span>{{email}}</p>
@@ -26,11 +27,18 @@
       <p><span>{{translate 'users.fields.address.zipcode'}}:
         </span>{{address.zipcode}}</p>
 
-      <h2>{{translate 'users.fields.company.title'}}:</h2>
+      <h2>{{translate 'users.fields.company.title'}}</h2>
       <p><span>{{translate 'users.fields.company.name'}}:
         </span>{{company.name}}</p>
       <p><span>{{translate 'users.fields.company.catchPhrase'}}:
         </span>{{company.catchPhrase}}</p>
+
+      <h2>{{translate 'users.fields.pets.title' smart_count=pets.length}}</h2>
+      <ul>
+        {{#each pets}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
 
     </div>
   </body>
